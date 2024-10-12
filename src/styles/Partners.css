@@ -1,0 +1,8 @@
+.partners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 32px;
+  margin: 10px;
+}

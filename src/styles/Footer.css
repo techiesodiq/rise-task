@@ -1,0 +1,54 @@
+/* General footer styles */
+footer-section {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+
+footer-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer-section li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+footer-section img {
+  margin-left: 8px;
+}
+
+footer-section h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  footer-section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  footer-section div > div {
+    flex-basis: 24%; /* Each section takes up 1/4 of the row */
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+  footer-section div {
+    flex-direction: column;
+  }
+
+  footer-section div > div {
+    width: 100%;
+  }
+}

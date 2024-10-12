@@ -1,0 +1,32 @@
+.regulation-section {
+  background-image: url("../assets/images/regulationBg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 94px;
+  margin-top: 20px;
+}
+
+.regulation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.regulation-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #2d2d2d;
+}
+
+.regulation-text p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #4a5050;
+  max-width: 504px;
+}

@@ -1,0 +1,87 @@
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 80px;
+  height: 70vh;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #07969e;
+}
+
+.hero-text h1 span {
+  color: #40bbc3;
+  vertical-align: super;
+  margin: 2px;
+  position: relative;
+  top: -0.25rem;
+}
+
+.hero-text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 391px;
+  color: #4a5050;
+}
+
+.cta-buttons {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-right: 60px;
+}
+
+.hero-image img {
+  padding-right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+}
