@@ -17,7 +17,7 @@ const ServiceSection = () => {
           <div className="service-text">
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <a href="#" className="service-link">
+            <a href="/" className="service-link">
               {service.linkText}
               <span>&#8594;</span>
             </a>

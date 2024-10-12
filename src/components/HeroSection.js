@@ -15,10 +15,10 @@ const HeroSection = () => {
           and achieve your financial goals.
         </h4>
         <div className="cta-buttons">
-          <a href="#" className="btn">
+          <a href="/" className="btn">
             <img src={AppStoreIcon} alt="App Store" />
           </a>
-          <a href="#" className="btn">
+          <a href="/" className="btn">
             <img src={GooglePlayIcon} alt="Google Play" />
           </a>
         </div>

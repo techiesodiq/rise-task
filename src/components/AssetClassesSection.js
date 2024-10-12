@@ -38,7 +38,7 @@ const AssetClassesSection = () => {
                   </p>
                 </div>
               </div>
-              <a href="#" className="asset-link">
+              <a href="/" className="asset-link">
                 {asset.linkText}
                 <span>&#8594;</span>
               </a>

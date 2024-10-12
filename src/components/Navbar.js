@@ -7,31 +7,31 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <a href="#">
+          <a href="/">
             <img src={Logo} alt="Logo" />
           </a>
         </div>
         <div className="nav-links-container">
           <ul className="nav-links">
             <li className="home-link">
-              <a href="#">
+              <a href="/">
                 <img src={HomeImg} alt="Home" />{" "}
               </a>
             </li>
             <li>
-              <a href="#">Products &#8595; </a>
+              <a href="/">Products &#8595; </a>
             </li>
             <li>
-              <a href="#">Investment Club</a>
+              <a href="/src">Investment Club</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="/">Blog</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="/">About Us</a>
             </li>
             <li>
-              <a href="#">FAQs</a>
+              <a href="/">FAQs</a>
             </li>
           </ul>
         </div>
