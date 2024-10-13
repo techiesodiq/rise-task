@@ -1,5 +1,7 @@
 import FixedIncome from "../images/fixed-income.svg";
 import FooterLogo from "../images/footer-logo.svg";
+import HomeImg from "../images/home.svg";
+import Logo from "../images/logo.svg";
 import RealEstateIcon from "../images/real-estate.svg";
 import ServiceImg1 from "../images/service1.svg";
 import ServiceImg2 from "../images/service2.svg";
@@ -10,6 +12,69 @@ import Avatar1 from "../images/testimonialImage1.svg";
 import Avatar2 from "../images/testimonialImage2.svg";
 
 const homeData = {
+  navData: {
+    logo: {
+      image: Logo,
+      link: "/",
+    },
+    pages: [
+      {
+        id: "1",
+        label: "Home",
+        link: "/",
+        hasImage: true,
+        image: HomeImg,
+        hasDropdown: false,
+        htmlEntity: "",
+      },
+      {
+        id: "2",
+        label: "Products",
+        link: "/",
+        hasImage: false,
+        image: "",
+        hasDropdown: true,
+        htmlEntity: "&#8595;",
+      },
+      {
+        id: "3",
+        label: "Investment Club",
+        link: "/",
+        hasImage: false,
+        image: "",
+        hasDropdown: false,
+        htmlEntity: "",
+      },
+      {
+        id: "4",
+        label: "Blog",
+        link: "/",
+        hasImage: false,
+        image: "",
+        hasDropdown: false,
+        htmlEntity: "",
+      },
+      {
+        id: "5",
+        label: "About Us",
+        link: "/",
+        hasImage: false,
+        image: "",
+        hasDropdown: false,
+        htmlEntity: "",
+      },
+      {
+        id: "6",
+        label: "FAQs",
+        link: "/",
+        hasImage: false,
+        image: "",
+        hasDropdown: false,
+        htmlEntity: "",
+      },
+    ],
+  },
+
   services: [
     {
       id: "1",

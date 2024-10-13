@@ -16,7 +16,7 @@ const SavingSection = () => {
           With Rise, you achieve your financial goals faster. Save for school,
           your home, vacations, your children’s future and more.
         </p>
-        <a href="#">Start Saving</a>
+        <a href="/">Start Saving</a>
       </div>
     </section>
   );

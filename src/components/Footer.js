@@ -21,53 +21,65 @@ const Footer = () => {
               const { pageName } = item || {};
               return (
                 <li key={index} className="footer-list-item">
-                  {pageName}
+                  <a href="/">{pageName}</a>
                 </li>
               );
             })}
           </ul>
         </div>
-        <div>
+        <div className="footer-column footer-explore">
           <h4>{exploreTitle}</h4>
           <ul>
-            <ul>
-              {explorePageList.map((item, index) => {
-                const { pageName } = item || {};
-                return (
-                  <li key={index}>
+            {explorePageList.map((item, index) => {
+              const { pageName } = item || {};
+              return (
+                <li key={index} className="footer-list-item">
+                  <a href="/">
                     {pageName}
-                    <img src={TopRightArrow} alt="Arrow" />
-                  </li>
-                );
-              })}
-            </ul>
+                    <img
+                      src={TopRightArrow}
+                      alt="Arrow"
+                      className="footer-arrow-icon"
+                    />
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div>
+        <div className="footer-column footer-products">
           <h4>{productTitle}</h4>
+
           <ul>
-            <ul>
-              {productPageList.map((item, index) => {
-                const { pageName } = item || {};
-                return <li key={index}>{pageName}</li>;
-              })}
-            </ul>
+            {productPageList.map((item, index) => {
+              const { pageName } = item || {};
+              return (
+                <li key={index} className="footer-list-item">
+                  <a href="/"> {pageName}</a>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div>
+        <div className="footer-column footer-contact">
           <h4>{contactTitle}</h4>
+
           <ul>
-            <ul>
-              {contactPageList.map((item, index) => {
-                const { pageName } = item || {};
-                return (
-                  <li key={index}>
+            {contactPageList.map((item, index) => {
+              const { pageName } = item || {};
+              return (
+                <li key={index} className="footer-list-item">
+                  <a href="/">
                     {pageName}
-                    <img src={TopRightArrow} alt="Arrow" />
-                  </li>
-                );
-              })}
-            </ul>
+                    <img
+                      src={TopRightArrow}
+                      alt="Arrow"
+                      className="footer-arrow-icon"
+                    />
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

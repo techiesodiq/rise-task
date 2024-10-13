@@ -1,38 +1,41 @@
-import HomeImg from "../assets/images/home.svg";
-import Logo from "../assets/images/logo.svg";
+import homeData from "../assets/data/homeData";
 import "../styles/Navbar.css";
+
+const { navData } = homeData;
 
 const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
         <div className="logo">
-          <a href="/">
-            <img src={Logo} alt="Logo" />
+          <a href={navData.logo.link}>
+            <img src={navData.logo.image} alt="Logo" />
           </a>
         </div>
+
         <div className="nav-links-container">
           <ul className="nav-links">
-            <li className="home-link">
-              <a href="/">
-                <img src={HomeImg} alt="Home" />{" "}
-              </a>
-            </li>
-            <li>
-              <a href="/">Products &#8595; </a>
-            </li>
-            <li>
-              <a href="/src">Investment Club</a>
-            </li>
-            <li>
-              <a href="/">Blog</a>
-            </li>
-            <li>
-              <a href="/">About Us</a>
-            </li>
-            <li>
-              <a href="/">FAQs</a>
-            </li>
+            {navData.pages.map((page, index) => (
+              <li
+                key={index}
+                className={page.label === "Home" ? "home-link" : ""}
+              >
+                <a href={page.link}>
+                  {page.hasImage ? (
+                    <img src={page.image} alt={page.label} />
+                  ) : page.hasDropdown ? (
+                    <>
+                      {page.label}{" "}
+                      <span
+                        dangerouslySetInnerHTML={{ __html: page.htmlEntity }}
+                      />
+                    </>
+                  ) : (
+                    page.label
+                  )}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

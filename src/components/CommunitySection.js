@@ -15,7 +15,7 @@ const CommunitySection = () => {
           </p>
           <a>Join our Community</a>
         </div>
-        <img src={CommunityImg} alt="Community Image" />
+        <img src={CommunityImg} alt="Community" />
       </div>
     </section>
   );
