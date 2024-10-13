@@ -1,7 +1,9 @@
 import homeData from "../assets/data/homeData";
 import "../styles/Testimonial.css";
 
-const testimonials = homeData.testimonials;
+const {
+  testimonials: { title, subtitle, quotations },
+} = homeData;
 
 const TestimonialSection = () => {
   //   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,12 +34,12 @@ const TestimonialSection = () => {
     <section className="testimonial-section">
       <div className="testimonial-content">
         <div className="testimonial-header">
-          <h2>{testimonials.title}</h2>
-          <p>{testimonials.subtitle}</p>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
         </div>
         {/* <div className="testimonial-slider-wrapper"> */}
         <div className="testimonial-list">
-          {testimonials.quotations.map((item, index) => {
+          {quotations.map((item, index) => {
             const { quote, name, avatar } = item || {};
             return (
               <div className="testimonial" key={index}>

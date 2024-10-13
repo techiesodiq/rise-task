@@ -1,50 +1,60 @@
 import homeData from "../assets/data/homeData";
 import "../styles/AssetClasses.css";
 
-const assetClasses = homeData.assetClasses;
+const {
+  assetClassesData: { title, subtitle, assetClasses },
+} = homeData;
 
 const AssetClassesSection = () => {
   return (
     <section className="asset-classes-section">
-      <h2>Asset Classes</h2>
-      <h4>It’s your money, choose where you invest it</h4>
+      <h2>{title}</h2>
+      <h4>{subtitle}</h4>
       <div className="asset-classes-cards">
-        {assetClasses.map((asset, index) => (
-          <div
-            style={{
-              backgroundColor: asset.bgColor,
-            }}
-            className="asset-card"
-            key={index}
-          >
-            <div className="asset-card-blank-content"></div>
-            <div className="asset-card-content">
-              <div className="asset-logo-container">
-                <img
-                  src={asset.iconImage}
-                  alt={`${asset.title} Logo`}
-                  className="asset-logo"
-                />
-              </div>
-              <div className="asset-text">
-                <h3>{asset.title}</h3>
-                <p className="asset-description">{asset.description}</p>
-                <div className="asset-features">
-                  <p>
-                    Historical returns: <span>{asset.historicalReturns}</span>
-                  </p>
-                  <p>
-                    Risk Level: <span>{asset.riskLevel}</span>
-                  </p>
+        {assetClasses.map((asset, index) => {
+          const {
+            title,
+            bgColor,
+            description,
+            historicalReturns,
+            riskLevel,
+            link,
+            linkText,
+            iconImage,
+          } = asset;
+          return (
+            <div
+              style={{
+                backgroundColor: bgColor,
+              }}
+              className="asset-card"
+              key={index}
+            >
+              <div className="asset-card-blank-content"></div>
+              <div className="asset-card-content">
+                <div className="asset-logo-container">
+                  <img src={iconImage} alt={title} className="asset-logo" />
                 </div>
+                <div className="asset-text">
+                  <h3>{title}</h3>
+                  <p className="asset-description">{description}</p>
+                  <div className="asset-features">
+                    <p>
+                      Historical returns: <span>{historicalReturns}</span>
+                    </p>
+                    <p>
+                      Risk Level: <span>{riskLevel}</span>
+                    </p>
+                  </div>
+                </div>
+                <a href={link} className="asset-link">
+                  {linkText}
+                  <span>&#8594;</span>
+                </a>
               </div>
-              <a href="/" className="asset-link">
-                {asset.linkText}
-                <span>&#8594;</span>
-              </a>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

@@ -1,23 +1,30 @@
-import AppImg from "../assets/images/app_icon.svg";
-import AppStoreIcon from "../assets/images/app_store_icon.svg";
-import GooglePlayIcon from "../assets/images/google_play_icon.svg";
+import homeData from "../assets/data/homeData";
 import "../styles/DownloadApp.css";
+
+const {
+  downloadAppData: { title, subtitle, description, image, downloadApp },
+} = homeData;
 
 const DownloadAppSection = () => {
   return (
     <section className="download-app-section">
       <div className="download-app-content">
         <div className="app-details">
-          <h5>Download The Rise App</h5>
-          <h2>Join our 100,000 users investing and setting long term goals!</h2>
-          <p>Dollar investments that help you grow.</p>
+          <h5>{title}</h5>
+          <h2>{subtitle}</h2>
+          <p>{description}</p>
           <div className="app-btn">
-            <img src={AppStoreIcon} alt="App Store" />
-
-            <img src={GooglePlayIcon} alt="Google Play" />
+            {downloadApp.map((item, index) => {
+              const { name, icon, link } = item;
+              return (
+                <a key={index} href={link}>
+                  <img src={icon} alt={name} />
+                </a>
+              );
+            })}
           </div>
         </div>
-        <img src={AppImg} alt="App" />
+        <img src={image} alt="App" />
       </div>
     </section>
   );

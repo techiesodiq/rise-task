@@ -1,17 +1,15 @@
-import ARMLogo from "../assets/images/arm.svg";
-import TechstarsLogo from "../assets/images/techstars.svg";
-import VLogo from "../assets/images/v_logo.svg";
-import WesternUnionLogo from "../assets/images/western-union.svg";
-
+import homeData from "../assets/data/homeData";
 import "../styles/Partners.css";
+
+const { partners } = homeData;
 
 const PartnersSection = () => {
   return (
     <section className="partners-section">
-      <img src={ARMLogo} alt="Partner 1" />
-      <img src={WesternUnionLogo} alt="Partner 2" />
-      <img src={TechstarsLogo} alt="Partner 3" />
-      <img src={VLogo} alt="Partner 4" />
+      {partners.map((partner, index) => {
+        const { name, logo } = partner;
+        return <img key={index} src={logo} alt={name} />;
+      })}
     </section>
   );
 };

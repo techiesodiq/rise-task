@@ -1,32 +1,35 @@
 import homeData from "../assets/data/homeData";
 import "../styles/Service.css";
 
-const services = homeData.services;
+const { services } = homeData;
 
 const ServiceSection = () => {
   return (
     <section className="services-section">
-      {services.map((service, index) => (
-        <div
-          className="service-row"
-          key={index}
-          style={{
-            flexDirection: index % 2 === 0 ? "row" : "row-reverse",
-          }}
-        >
-          <div className="service-text">
-            <h2>{service.title}</h2>
-            <p>{service.description}</p>
-            <a href="/" className="service-link">
-              {service.linkText}
-              <span>&#8594;</span>
-            </a>
+      {services.map((service, index) => {
+        const { title, description, link, linkText, image } = service;
+        return (
+          <div
+            className="service-row"
+            key={index}
+            style={{
+              flexDirection: index % 2 === 0 ? "row" : "row-reverse",
+            }}
+          >
+            <div className="service-text">
+              <h2>{title}</h2>
+              <p>{description}</p>
+              <a href={link} className="service-link">
+                {linkText}
+                <span>&#8594;</span>
+              </a>
+            </div>
+            <div className="service-image">
+              <img src={image} alt={title} />
+            </div>
           </div>
-          <div className="service-image">
-            <img src={service.image} alt={service.title} />
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </section>
   );
 };
