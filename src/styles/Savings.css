@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 160px; */
 }
 
 .savings-image {
@@ -63,4 +62,10 @@
   line-height: 24px;
   text-align: center;
   width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .savings-section {
+    display: none;
+  }
 }
