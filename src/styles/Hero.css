@@ -79,11 +79,19 @@
 }
 
 .hero-text h4 {
+  color: #4a5050;
+}
+
+.desktop-description {
+  display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   width: 391px;
-  color: #4a5050;
+}
+
+.mobile-description {
+  display: none;
 }
 
 .cta-buttons {
@@ -169,5 +177,19 @@
   .hero-text h1 {
     font-size: 40px;
     line-height: 36px;
+  }
+
+  .desktop-description {
+    display: none;
+  }
+
+  .mobile-description {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
   }
 }

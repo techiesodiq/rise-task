@@ -13,6 +13,9 @@ import ServiceImg1 from "../images/service1.svg";
 import ServiceImg2 from "../images/service2.svg";
 import ServiceImg3 from "../images/service3.svg";
 import ServiceImg4 from "../images/service4.svg";
+import ServiceMobileImg1 from "../images/service_mobile1.svg";
+import ServiceMobileImg2 from "../images/service_mobile2.svg";
+import ServiceMobileImg3 from "../images/service_mobile3.svg";
 import StocksIcon from "../images/stocks.svg";
 import TechstarsLogo from "../images/techstars.svg";
 import Avatar1 from "../images/testimonialImage1.svg";
@@ -87,8 +90,10 @@ const homeData = {
   heroData: {
     title: "hero",
     heroText: "Dollar investments that help you grow",
-    description:
+    desktopDescription:
       "We put your money in high quality assets that help you build wealth and achieve your financial goals.",
+    mobileDescription:
+      "Your personal wealth manager. Get started with a minimum of $10 and",
     image: HeroImg,
     downloadApp: [
       {
@@ -130,39 +135,52 @@ const homeData = {
   services: [
     {
       id: "1",
-      title: "Invest your money in dollars",
-      description:
+      desktopTitle: "Invest your money in dollars",
+      mobileTitle: "Superior Performance",
+      desktopDescription:
         "By holding your investments in a stable currency, your money grows more over time and retains its value better.",
+      mobileDescription:
+        "Rise outperforms your other alternatives in two ways. The first is through our expert, algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you.",
       link: "/",
       linkText: "Start Investing Now",
       image: ServiceImg1,
+      mobileImage: ServiceMobileImg1,
     },
     {
       id: "2",
-      title: "Choose what's best for you",
-      description:
+      desktopTitle: "Choose what's best for you",
+      mobileTitle: "Personalization",
+      desktopDescription:
         "Unlike other platforms, Rise lets you pick between stocks, US real estate and fixed income, according to your risk appetite. That way you can spread your risk and tap into different investments all in one place. ",
+      mobileDescription:
+        "No two people are the same, and everyone’s financial goals are different. Rise understands this, which is why we tailor your journey to financial freedom to fit you.",
       link: "/",
       linkText: "Start Investing Now",
       image: ServiceImg2,
+      mobileImage: ServiceMobileImg2,
     },
     {
       id: "3",
-      title: "Set goals and reach them",
-      description:
+      desktopTitle: "Set goals and reach them",
+      mobileTitle: "Diversification",
+      desktopDescription:
         "You can invest towards a goal on Rise--retirement, higher education, save for your home or travel budgets. Or create a goal of your own and invest periodically to achieve them. ",
+      mobileDescription:
+        "Rise offers a choice of three asset classes: US equities, US real estate and fixed income assets to provide stability to your investments and protection from market declines. You can pick one asset class or",
       link: "/",
       linkText: "Start Investing Now",
       image: ServiceImg3,
+      mobileImage: ServiceMobileImg3,
     },
     {
       id: "4",
-      title: "We remember so you dont have to",
-      description:
+      desktopTitle: "We remember so you dont have to",
+      desktopDescription:
         "Our Auto-invest feature makes it easy to stay consistent, even when you forget. Set a funding amount, frequency and payment method and Rise will automatically fund your investment, on schedule.",
       link: "/",
       linkText: "Start Investing Now",
       image: ServiceImg4,
+      mobileImage: null,
     },
   ],
   assetClassesData: {

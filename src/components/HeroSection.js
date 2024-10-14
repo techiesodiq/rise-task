@@ -3,7 +3,14 @@ import "../styles/Hero.css";
 import Container from "./Container";
 
 const {
-  heroData: { title, heroText, description, image, downloadApp },
+  heroData: {
+    title,
+    heroText,
+    desktopDescription,
+    mobileDescription,
+    image,
+    downloadApp,
+  },
 } = homeData;
 
 const HeroSection = () => {
@@ -21,7 +28,8 @@ const HeroSection = () => {
             {heroText}
             <span>.</span>
           </h1>
-          <h4>{description}</h4>
+          <h4 className="desktop-description">{desktopDescription}</h4>
+          <h4 className="mobile-description">{mobileDescription}</h4>
           <div className="cta-buttons">
             {downloadApp.map((item, index) => {
               const { name, icon, link } = item;
