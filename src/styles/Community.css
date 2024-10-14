@@ -58,9 +58,17 @@
   color: #07969e;
 }
 
+.desktop-description {
+  display: block;
+}
+
+.mobile-description {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .community-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .community-content img {
@@ -70,5 +78,20 @@
   .community-text {
     padding: 20px;
     text-align: center;
+    align-items: center;
+  }
+
+  .community-text h2 {
+    font-size: 32px;
+    line-height: 28.8px;
+    max-width: 330px;
+  }
+
+  .desktop-description {
+    display: none;
+  }
+
+  .mobile-description {
+    display: block;
   }
 }

@@ -68,7 +68,15 @@
 @media (max-width: 768px) {
   .download-app-content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px 20px 0 20px;
+  }
+
+  .app-details {
+    margin-left: 0;
+    margin-bottom: 30px;
   }
 
   .app-details h2 {
@@ -81,5 +89,9 @@
 
   .download-app-content img {
     max-width: 300px;
+  }
+
+  .app-btn {
+    justify-content: space-between;
   }
 }

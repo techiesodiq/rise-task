@@ -278,7 +278,8 @@ const homeData = {
   communityData: {
     title: "Join The Rise Community",
     description:
-      " If you want to go far, go together. Our Telegram community surrounds you with others who can help you along your financial journey with tips, support, advice and learning. It's completely free and open to new and seasoned investors.",
+      "If you want to go far, go together. Our Telegram community surrounds you with others who can help you along your financial journey with tips, support, advice and learning. It's completely free and open to new and seasoned investors.",
+    mobileDescription: "If you want to go far, go together.",
     link: "/",
     linkText: "Join our Community",
   },
@@ -322,6 +323,9 @@ const homeData = {
         pageList: [
           { id: "1", pageName: "Investment Club", link: "/" },
           { id: "2", pageName: "Blog", link: "/" },
+          { id: "3", pageName: "Newsletter", link: "/" },
+          { id: "4", pageName: "Instagram", link: "/" },
+          { id: "5", pageName: "Twitter", link: "/" },
         ],
       },
       {

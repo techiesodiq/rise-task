@@ -4,7 +4,7 @@ import "../styles/Community.css";
 import Container from "./Container";
 
 const {
-  communityData: { title, description, link, linkText },
+  communityData: { title, description, mobileDescription, link, linkText },
 } = homeData;
 
 const CommunitySection = () => {
@@ -14,7 +14,8 @@ const CommunitySection = () => {
         <div className="community-content">
           <div className="community-text">
             <h2>{title}</h2>
-            <p>{description}</p>
+            <p className="desktop-description">{description}</p>
+            <p className="mobile-description">{mobileDescription}</p>
             <a href={link}>{linkText}</a>
           </div>
           <img src={CommunityImg} alt="Community" />

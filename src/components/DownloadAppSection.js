@@ -9,7 +9,7 @@ const {
 const DownloadAppSection = () => {
   return (
     <section className="download-app-section">
-      <Container>
+      <Container className="download-app-container">
         <div className="download-app-content">
           <div className="app-details">
             <h5>{title}</h5>
