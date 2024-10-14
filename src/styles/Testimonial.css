@@ -27,7 +27,6 @@
 }
 
 .testimonial-header p {
-  /* font-family: "DM Sans"; */
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -72,16 +71,17 @@
   padding: 24px;
   gap: 20px;
   width: 409px;
+  height: 248px;
   background: #ffffff;
   border: 1px solid #ecfefe;
   box-shadow: 0px 12px 24px rgba(64, 187, 195, 0.15);
   border-radius: 10px;
+  margin: 10px auto;
 }
 
 .testimonial p {
   margin-bottom: 15px;
   margin: 0 auto;
-  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
