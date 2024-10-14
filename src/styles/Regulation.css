@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 94px;
+  padding: 94px 0;
   margin-top: 20px;
 }
 
@@ -29,4 +29,45 @@
   line-height: 24px;
   color: #4a5050;
   max-width: 504px;
+}
+
+.desktop-description {
+  display: block;
+}
+
+.mobile-description {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .regulation-section {
+    margin-top: 0;
+    padding: 30px 0;
+    background-image: none;
+    background: linear-gradient(to bottom right, #fff4f0, #f6f2ff, #ecfefe);
+  }
+
+  .regulation-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .regulation-text h2 {
+    font-size: 32px;
+    line-height: 28.8px;
+  }
+
+  .regulation-text p {
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 305px;
+  }
+
+  .desktop-description {
+    display: none;
+  }
+
+  .mobile-description {
+    display: block;
+  }
 }

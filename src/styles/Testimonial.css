@@ -41,12 +41,6 @@
   max-width: 502px;
 }
 
-.testimonial-slider-wrapper {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
 .testimonial-list {
   display: flex;
   justify-content: space-between;
@@ -63,7 +57,6 @@
   padding: 24px;
   gap: 20px;
   width: 409px;
-  /* height: 248px; */
   background: #ffffff;
   border: 1px solid #ecfefe;
   box-shadow: 0px 12px 24px rgba(64, 187, 195, 0.15);
@@ -97,4 +90,10 @@
 .testimonial span {
   color: #07969e;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .testimonial-list {
+    flex-direction: column;
+  }
 }

@@ -239,6 +239,8 @@ const homeData = {
     title: "How we are Regulated",
     description:
       "Rise is registered and regulated both in the US and in Nigeria. Our team is made up of US registered investment advisers, our Nigerian users are covered by our SEC licensed trustees, ARM Trustees and all our assets are held with regulated third parties, in all relevant jurisdictions",
+    mobileDescription:
+      "Rise is registered and regulated both in the US and in Nigeria. The founder is registered as an investment adviser with the US SEC. The Nigerian SEC regulates Rise's Nigerian investments through a trusteeship agreement with ARM Trustees, who oversees investments on behalf of the users. And a registered investment subsidiary holds all users' assets regulated in the US",
   },
   testimonials: {
     title: "From The People Who Use Rise",
