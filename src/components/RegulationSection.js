@@ -1,5 +1,6 @@
 import homeData from "../assets/data/homeData";
 import "../styles/Regulation.css";
+import Container from "./Container";
 
 const {
   regulations: { title, description },
@@ -8,10 +9,12 @@ const {
 const RegulationSection = () => {
   return (
     <section className="regulation-section">
-      <div className="regulation-text">
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
+      <Container>
+        <div className="regulation-text">
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+      </Container>
     </section>
   );
 };

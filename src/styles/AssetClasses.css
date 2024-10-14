@@ -1,5 +1,5 @@
 .asset-classes-section {
-  padding: 80px;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -21,9 +21,8 @@
 
 .asset-classes-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 46px;
   margin-top: 20px;
 }
 

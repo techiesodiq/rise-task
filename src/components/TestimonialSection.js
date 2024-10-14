@@ -1,5 +1,6 @@
 import homeData from "../assets/data/homeData";
 import "../styles/Testimonial.css";
+import Container from "./Container";
 
 const {
   testimonials: { title, subtitle, quotations },
@@ -32,27 +33,29 @@ const TestimonialSection = () => {
 
   return (
     <section className="testimonial-section">
-      <div className="testimonial-content">
-        <div className="testimonial-header">
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-        </div>
-        {/* <div className="testimonial-slider-wrapper"> */}
-        <div className="testimonial-list">
-          {quotations.map((item, index) => {
-            const { quote, name, avatar } = item || {};
-            return (
-              <div className="testimonial" key={index}>
-                <p>{quote}</p>
-                <div className="testimonial-author">
-                  <img src={avatar} alt={name} /> <span>{name}</span>
+      <Container>
+        <div className="testimonial-content">
+          <div className="testimonial-header">
+            <h2>{title}</h2>
+            <p>{subtitle}</p>
+          </div>
+          {/* <div className="testimonial-slider-wrapper"> */}
+          <div className="testimonial-list">
+            {quotations.map((item, index) => {
+              const { quote, name, avatar } = item || {};
+              return (
+                <div className="testimonial" key={index}>
+                  <p>{quote}</p>
+                  <div className="testimonial-author">
+                    <img src={avatar} alt={name} /> <span>{name}</span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+          {/* </div> */}
         </div>
-        {/* </div> */}
-      </div>
+      </Container>
     </section>
   );
 };

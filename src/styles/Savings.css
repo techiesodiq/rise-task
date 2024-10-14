@@ -1,8 +1,20 @@
 .savings-section {
+  margin-top: auto;
+}
+
+.savings-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  /* gap: 160px; */
+}
+
+.savings-image {
+  display: flex;
   justify-content: center;
-  gap: 160px;
+  align-items: center;
+  height: 100%;
+  padding-left: 40px;
 }
 
 .savings-text {
@@ -10,6 +22,7 @@
   flex-direction: column;
   justify-content: center;
   width: 401px;
+  margin-right: 60px;
 }
 
 .savings-text h4 {

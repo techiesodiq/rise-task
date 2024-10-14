@@ -1,27 +1,25 @@
 .download-app-section {
   background-color: #fff;
-  padding: 60px 80px;
+  padding: 60px 0;
 }
 
 .download-app-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 90px;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 20px;
   flex-wrap: wrap;
   background-color: #ecfefe;
   border-radius: 50px;
-  width: 1200px;
 }
 
 .app-details {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  margin-left: 30px;
   gap: 16px;
-  /* margin: 0 auto; */
 }
 
 .app-details h5 {
@@ -61,6 +59,10 @@
 
 .app-btn img:hover {
   transform: scale(1.05);
+}
+
+.app-image img {
+  margin-right: 60px;
 }
 
 @media (max-width: 768px) {
