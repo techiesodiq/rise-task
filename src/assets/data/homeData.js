@@ -244,14 +244,17 @@ const homeData = {
   },
   testimonials: {
     title: "From The People Who Use Rise",
+    mobileTitle: "What our customers are saying",
     subtitle:
       "Our mission at Risevest is to empower more people just like you to achieve your personal financial goals.",
+    mobileSubtitle: "We serve over 80,000 amazing users.",
     quotations: [
       {
         id: "1",
         quote:
           "I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.",
         name: "Lade",
+        occupation: "UX Researcher",
         avatar: Avatar1,
       },
       {
@@ -259,6 +262,7 @@ const homeData = {
         quote:
           "I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.",
         name: "Jesse",
+        occupation: "Software Engineer",
         avatar: Avatar1,
       },
       {
@@ -266,6 +270,7 @@ const homeData = {
         quote:
           "I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that’s at an all-time high in Nigeria.",
         name: "Raye",
+        occupation: "Devops Engineer",
         avatar: Avatar2,
       },
     ],
