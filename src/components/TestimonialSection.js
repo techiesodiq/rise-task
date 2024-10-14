@@ -1,4 +1,5 @@
 import "swiper/css";
+import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import homeData from "../assets/data/homeData";
@@ -28,6 +29,14 @@ const TestimonialSection = () => {
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
               grabCursor={true}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+              }}
             >
               {quotations.map((item, index) => {
                 const { quote, name, occupation, avatar } = item || {};
